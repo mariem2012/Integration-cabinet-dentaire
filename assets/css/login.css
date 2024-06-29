@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 217, 217);
+}
+
+main {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.form-details {
+    width: 50%;
+    background-color: #516EFF;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-details img {
+    position: relative;
+    top: -100px;
+    left: -146px;
+    width: 50%;
+}
+
+.form-details h2 {
+    font-size: 30px;
+}
+.form-details p {
+   font-size: 20px;
+}
+
+.form-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form-content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.form a {
+    color: #516EFF;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px #516EFF solid;
+    outline: none;
+    margin-top: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+form button {
+    cursor: pointer;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:#516EFF;
+    color: var(--white);
+    border: none; 
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        width: 60%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .form-details {
+        display: none;
+    }
+    .form-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-details img {
+        top: -50px;
+        left: 0;
+        width: 100px;
+    }
+
+    .form input,
+    form button {
+        width: 100%;
+    }
+
+    .form-content h2,
+    .form-details h2,
+    .form-details p {
+        font-size: 24px;
+    }
+
+    .form a,
+    .form-content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 430px) {
+    .form-details img {
+        top: -20px;
+        width: 80px;
+    }
+
+    .form input,
+    form button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .form-content h2,
+    .form-details h2,
+    .form-details p {
+        font-size: 20px;
+    }
+
+    .form a,
+    .form-content p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentical Site</title>
+    <link rel="stylesheet" href="assets/css/sign-up.css">
+</head>
+<body>
+    <header>
+        <!-- menu responsive -->
+        <div class="toggle_menu"></div>
+    </header>
+    <main>
+        <div class="form-details">
+            <a href="/"><img src="assets/images/Vector.svg" alt="Vector svg"></a>
+            <h2>Create Account</h2>
+            <p>To become a part of our community please, <br>sign up using our personnal information.</p>
+        </div>
+        <div class="form-content">
+            <h2>Sign Up</h2>
+            <form action="#" class="form">
+                <div class="email">
+                    <input type="email" name="useremail" id="email" placeholder="E-mail" required>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <P>Or use your email for registration</P>
+                <div class="icons">
+                    <img src="assets/images/facebook-icon.svg" alt="Facebook icon" class="">
+                    <img src="assets/images/google-icon.svg" alt="Google icon">
+                    <img src="assets/images/linkedin-icon.svg" alt="Linkedin icon">
+                </div> 
+                <button type="submit" id="sign-up">Sign Up</button>
+                <p>You alrealy have an account? <a href="login.html">Login</a><p>
+            </form>    
+        </div>
+    </main>
+    <script>
+        var small_menu = document.querySelector('.toggle_menu')
+        var menu = document.querySelector('.header-content')
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

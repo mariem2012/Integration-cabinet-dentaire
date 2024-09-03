@@ -8,12 +8,30 @@
 </head>
 <body>
     <header>
-        <!-- menu responsive -->
-        <div class="toggle_menu"></div>
+        <div class="header-content">
+            <nav>
+                <img src="assets/images/Logo.png" alt="logo">
+               <div >
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sevices">Services</a></li>
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#appoinment">Appoinment</a></li>
+                        <li><a href="sign-up.html">Sign up</a></li>
+                        <a href="login.html"><button type="submit" id="button">Login</button></a>
+                    </ul>
+               </div>
+              
+
+                <!-- menu respositive -->
+                <div class="toggle_menu"></div>
+              
+            </nav>
+
+        </div>
     </header>
     <main>
         <div class="form-details">
-            <a href="/"><img src="assets/images/Vector.svg" alt="Vector svg"></a>
             <h2>Create Account</h2>
             <p>To become a part of our community please, <br>sign up using our personnal information.</p>
         </div>
@@ -39,7 +57,7 @@
     </main>
     <script>
         var small_menu = document.querySelector('.toggle_menu')
-        var menu = document.querySelector('.header-content')
+        var menu = document.querySelector('.menu')
         small_menu.onclick = function(){
             small_menu.classList.toggle('active');
             menu.classList.toggle('responsive');

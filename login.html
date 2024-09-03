@@ -9,9 +9,31 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <img src="assets/images/Logo.png" alt="logo">
+               <div >
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sevices">Services</a></li>
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#appoinment">Appoinment</a></li>
+                        <li><a href="sign-up.html">Sign up</a></li>
+                        <a href="login.html"><button type="submit" id="button">Login</button></a>
+                    </ul>
+               </div>
+              
+
+                <!-- menu respositive -->
+                <div class="toggle_menu"></div>
+              
+            </nav>
+
+        </div>
+    </header>
     <main>
         <div class="form-details">
-            <a href="/"><img src="assets/images/Vector.svg" alt="Vector svg"></a>
             <h2>Welcome Back</h2>
             <p>Please log in using your personnal <br>information to stay connected with us </p>
         </div>
@@ -24,12 +46,20 @@
                 <div class="password">
                     <input type="password" name="password" id="password" placeholder="Password" required>
                 </div>
-                <a href="#">Forgot password?</a>
+                <p><a href="#">Forgot password?</a></p>
                 <button type="submit">Login</button>
                 <p>Don’t have an account? <a href="sign-up.html">Sign up</a></p>
             </form>
         </div>
     </main>
+    <script>
+        var small_menu = document.querySelector('.toggle_menu')
+        var menu = document.querySelector('.menu')
+        small_menu.onclick = function(){
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
 </body>
 
 </html>
